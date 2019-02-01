@@ -1,0 +1,55 @@
+	  :root {
+	  --saveWoffset: 50px; 
+	  --saveVoffset: 0px;
+	}
+	/*Remove bullets*/
+   body {margin:0;}
+
+  	ul {
+  	list-style-type: none;
+		height: 100%;
+
+	  	-ms-transform: translate(-100px, -4100px) rotate(-12deg); /* IE 9 */
+  		-webkit-transform: translate(100px, -4100px) rotate(-12deg); /* Safari */
+  		transform: translate(100px, -4100px) rotate(-12deg);
+		
+	}
+  	.save{
+      position: relative;
+      border-width: 16px;
+  		height:480px;
+  		border-style: solid;
+  		border-color: black;
+  		font-family: arial;
+  		text-align: center;
+  		width: 100%;
+  		background-color: #fffeff;
+
+	  	-ms-transform: translate(var(--saveWoffset), var(--saveVoffset)); /* IE 9 */
+  		-webkit-transform: translate(var(--saveWoffset), var(--saveVoffset)); /* Safari */
+  		transform: translate(var(--saveWoffset), var(--saveVoffset));
+  	}
+
+  	.saveText{
+  		padding-left: 50px;
+  		text-align: left;
+  		font-size: 7em;
+  		color: #f02200;
+	    position: absolute;
+	    bottom: 0;
+			left: 0;
+			font-weight: 900;
+		}
+		
+		#selected :first-child{
+  		color: white;
+	  }
+
+	  #selected {
+			background-color:#f02200;
+	  }
+    .outer{
+      background: #2f2c2cfc;
+      overflow: hidden;
+      position: relative;
+    }
